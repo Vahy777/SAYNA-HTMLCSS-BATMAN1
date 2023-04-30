@@ -6,6 +6,89 @@
 
 h1 {
     color: red;
-    font-family: 'rajdhani';
+    font-family: 'rajdhani'; 
     font-weight: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #f8f184;
+    --blue-color: #19587d;
+    --yellow-color: #FFF;
+
+}
+h1{
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+button{
+    font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Space-Grotesk';
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/*  Design de la navigation */
+
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+
+nav ul a{
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+    text-decoration: none;
+}
+
+
+nav ul a :hover {
+    color: var(--yellow-color);
+}
+
+/*Design de la partie en tête her*/
+
+#hero{
+    background-image: url(../Illustrations/Bathome1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+}
+
+/*Design de la Section Batman character*/
+
+.bat-character{
+    display: flex;
+    justify-content: space-between;
 }
