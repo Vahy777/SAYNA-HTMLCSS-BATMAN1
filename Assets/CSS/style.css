@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2? famille = Rajdhani &family= Space+Grotesk:wght@300;400;500;600;700 & display=swap');
 @font-face {
-    font-family: 'Rajdhani' ;
-    src: url(../Fonts/Rajdhani/Rajdhani-Medium.ttf);
-}
+    font-family: 'rajdhani' ;
+    src: url(../Fonts/Rajdhani/Rajdhani-Medium.ttf);}
 
+@font-face {
+    font-family: 'Space Grotesk'; ;
+    src: url(../Fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
 h1 {
     color: red;
     font-family: 'rajdhani'; 
@@ -21,6 +24,11 @@ h1 {
     --yellow-light: #f8f184;
     --blue-color: #19587d;
     --yellow-color: #FFF;
+    --gradient-white: #eddebf67;
+    --gradient-red: #890008;
+    --black-color: #000000;
+
+
 
 }
 h1{
@@ -43,7 +51,7 @@ button{
 body {
     background-color: black;
     color: white;
-    font-family: 'Space-Grotesk';
+    font-family: 'Space Grotesk';
     font-weight: 300;
     opacity: 0.8;
 }
@@ -54,12 +62,14 @@ nav{
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding-top: 20px;
+padding-top: 40px;
 padding-bottom: 20px;
+
 }
 
 nav ul {
     list-style: none;
+    
 }
 
 
@@ -88,7 +98,88 @@ nav ul a :hover {
 
 /*Design de la Section Batman character*/
 
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top:150px ;
+}
+
+#hero .titre{
+    margin: 20px 0;
+   
+}
+
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 400px;
+}
+
+.btn{
+    
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 15px 20px;
+    background: linear-gradient(80deg, var(--gradient-white), var(--gradient-red) );
+    box-shadow: var(--black-color) 5px 5px 60px;
+}
+
+.content p{
+    font-family: 'Space Grotesk';
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+
+
+}
+
+h1 {
+    color: var(--white-color);
+}
+.scroll .social{
+    margin-top:15px;
+
+}
+
+#bat-ciné{
+    margin-top: 40px;
+}
+
+#bat-ciné .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#bat-ciné .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+#bat-ciné .bat-item{
+    text-align: center;
+    
+}
+
 .bat-character{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bat-ennemis{
     display: flex;
     justify-content: space-between;
 }
