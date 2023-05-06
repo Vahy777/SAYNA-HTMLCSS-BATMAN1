@@ -27,6 +27,9 @@ h1 {
     --gradient-white: #eddebf67;
     --gradient-red: #890008;
     --black-color: #000000;
+    --gradient-blue: #19587d70;
+    --grey-color: #c4c4c450;
+
 
 
 
@@ -152,17 +155,17 @@ h1 {
 
 }
 
-#bat-ciné{
+#bat-ciné, #bat-jl,#bat-némésis, #bat-alies{
     margin-top: 40px;
 }
 
-#bat-ciné .titre {
+#bat-ciné .titre, #bat-jl .titre, #bat-némésis .titre, #bat-alies .titre {
     text-transform: uppercase;
     font-weight: bold;
     margin: 30px 0;
 }
 
-#bat-ciné .description {
+#bat-ciné .description, #bat-jl .description, #bat-némésis .description, #bat-alies .description {
     margin-bottom: 40px;
     text-align: justify;
     width: 80%;
@@ -182,4 +185,40 @@ h1 {
 .bat-ennemis{
     display: flex;
     justify-content: space-between;
+}
+
+.bat-alies{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*design de multimedia*/
+
+
+#multimedia .slider-multimedia {
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+    
+
+}
+
+#multimedia .slider-image{
+    width: 100%;
+
+}
+
+#multimedia .slider-content{
+  
+    background: var(--grey-color);
+    border-radius: 0 15px 15px 0;
+    background: linear-gradient(160deg, var(--grey-color), var(--gradient-blue) );
+    padding: 14px;
+    box-shadow: 0 px 5 px 10 px 0 px rgba ( 255 , 255 , 255 , 1 ) ;  
+}
+   
+
+#multimedia p{
+    font-size:12px ;
+    
 }
