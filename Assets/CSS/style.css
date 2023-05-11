@@ -194,6 +194,16 @@ h1 {
 
 /*design de multimedia*/
 
+#multimedia button{
+    position: relative;
+    top:155px;
+    background: none;
+    border: none;
+}
+
+#multimedia .right{
+    right: -90%;
+}
 
 #multimedia .slider-multimedia {
     display: flex;
@@ -221,4 +231,110 @@ h1 {
 #multimedia p{
     font-size:12px ;
     
+}
+
+#multimedia .yellow{
+ color: #FFFF00;
+}
+
+/*partie contact*/
+
+#contact{
+
+    background-color: darkslategray;
+    padding: 70px 0;
+  
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+
+
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .title{
+    display: block;
+    margin: 2px 0;
+}
+
+#contact .form input[type='email']{
+display: block;
+border-top:none;
+border-right:none;
+border-left:none;
+width: 80%;
+border-bottom: 2px solid darkgray;
+background-color: transparent;
+padding: 10px 0;
+
+}
+
+#contact .form textarea{
+    display: block;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    width: 80%;
+    border-bottom: 2px solid darkgray;
+    background-color: transparent;
+    padding: 10px 0;
+    color: darkgray;
+}
+
+#contact .newsletter{
+    margin: 15px 0;
+    border-bottom: 2px solid darkgrey;
+}
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+::-webkit-input-placeholder{
+    color: #f8f184;
+    font-size: 15px;
+}
+
+::-moz-placeholder{
+    color: #f8f184;
+    font-size: 15px;
+}
+
+:-ms-input-placeholder{
+    color: #f8f184;
+    font-size: 15px;
+}
+
+::placeholder {
+    color: #f8f184;
+    font-size: 15px;
+}
+
+.form input[type='radio']{
+opacity: 0;
+}
+
+
+
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid ;
+    padding: 5px;
+    background-image: none;
+    border-image: linear-gradient(45deg, --grey-color, blue) 1;;
+   
+
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
