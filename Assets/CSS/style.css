@@ -79,9 +79,12 @@ nav ul {
 nav ul a{
     color: var(--white-color);
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'rajdhani';
-    text-decoration: none;
+    text-decoration:underline;
+    text-underline-offset: 5px;
+
+
 }
 
 
@@ -147,6 +150,10 @@ nav ul a :hover {
 
 }
 
+#bat-alies{
+    padding-top: 0s;
+}
+
 h1 {
     color: var(--white-color);
 }
@@ -186,6 +193,19 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
+
+.Bathome12{
+    display: flex;
+    flex-direction: column;
+    align-items:self-end;
+    margin-right: -205px;
+    margin-top: 0;
+}
+
+.Bathome12 img{
+    width: 550px;
+}
+
 
 .bat-alies{
     display: flex;
@@ -324,17 +344,91 @@ opacity: 0;
 
 
 .btn-group label{
+    margin-right: 25px;
+    font-size: 14px;
+    font-family: 'Rajhdani';
+    font-weight: 700;
     cursor: pointer;
     border: 2px solid ;
-    padding: 5px;
-    background-image: none;
-    border-image: linear-gradient(45deg, --grey-color, blue) 1;;
+    padding: 10px 25px ;
+   -o-border-image: linear-gradient(100deg,rgba(179, 179, 184, 0.5), rgba(179, 179, 184, 0.5), rgb(70, 70, 253,0.6)
+   ) 1;
+   border-image: linear-gradient(100deg, rgba(179, 179, 184, 0.5),rgba(179, 179, 184, 0.5),rgba(105, 145, 231, 0.6)
+   ) 1;
    
+    background-image: none;
 
 }
 
 .btn-group{
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+   
+}
+
+input[type='submit']{
+    cursor: pointer;
+    font-family: 'rajdhani';
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    display: block;
+    width: 300px;
+    letter-spacing: 2px;
+    padding: 20px 60px;
+    justify-content: center;
+    margin: 50px auto;
+    border: none;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.568), rgba(224, 35, 35, 0.527));
+}
+
+#quotes{
+    margin: 90pxs;
+}
+
+#quotes .quote-card{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto ;
+}
+
+#quotes .quote-text{
+font-weight: 500;
+line-height: 2;
+font-size: 20px;
+}
+
+#quotes .Author{
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: 'Space Grotesk';
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.close{
+    float: right;
+}
+
+/*design Footer*/
+
+footer{
+    margin-top: 160px;
+}
+
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+ 
+}
+
+.social-media{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+footer .social-item{
+    padding: 15px;
 }
