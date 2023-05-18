@@ -29,7 +29,10 @@ h1 {
     --black-color: #000000;
     --gradient-blue: #19587d70;
     --grey-color: #c4c4c450;
-
+    --aa-color:yellow;
+    --overlay-opacity-without-hover: 0.6 ;
+    --overlay-opacity-during-hover: 1 ;
+    --overlay-opacity: var( --overlay-opacity-without-hover ) ;
 
 
 
@@ -70,11 +73,16 @@ padding-bottom: 20px;
 
 }
 
+
+
 nav ul {
     list-style: none;
     
 }
 
+.img a:hover, .img a:focus{
+    color: var(--aa-color);
+}
 
 nav ul a{
     color: var(--white-color);
@@ -87,20 +95,33 @@ nav ul a{
 
 }
 
+.image-hover:hover {
+    filter: invert(0%) sepia(100%) saturate(8000%) hue-rotate(360deg) brightness(199%) contrast(200%) opacity(100%);
+  }
+
+  .scroll img:hover {
+    filter: invert(0%) sepia(100%) saturate(8000%) hue-rotate(360deg) brightness(299%) contrast(100%) opacity(100%);
+  }
+  
+  .social-item img:hover {
+    filter: invert(0%) sepia(100%) saturate(8000%) hue-rotate(360deg) brightness(299%) contrast(100%) opacity(100%);
+  }
+
 
 nav ul a :hover {
     color: var(--yellow-color);
 }
 
-/*Design de la partie en tête her*/
+/*Design de la partie en tête hero*/
 
-#hero{
-    background-image: url(../Illustrations/Bathome1.png);
-    height: 800px;
-    background-position: top center;
-    background-repeat: no-repeat;
+  @media only screen and (min-width: 400px) {
+    body {
+      background-image: url(../Illustrations/Bathome1.png);
+      background-repeat: no-repeat;
+    }
+  }
 
-}
+
 
 /*Design de la Section Batman character*/
 
@@ -114,6 +135,8 @@ nav ul a :hover {
     padding-top:150px ;
 }
 
+
+
 #hero .titre{
     margin: 20px 0;
    
@@ -125,15 +148,23 @@ nav ul a :hover {
     margin-top: 400px;
 }
 
+/*buttons customize*/
+
 .btn{
-    
+    background: linear-gradient(100deg, var(--gradient-white), var(--gradient-white), var(--gradient-red)); ;
+    width: 50%;
+    display: block;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
     text-decoration: none;
     color: var(--white-color);
     font-size: 22px;
     padding: 15px 20px;
-    background: linear-gradient(80deg, var(--gradient-white), var(--gradient-red) );
-    box-shadow: var(--black-color) 5px 5px 60px;
 }
+
+
+/*Content*/
 
 .content p{
     font-family: 'Space Grotesk';
@@ -159,6 +190,13 @@ h1 {
 }
 .scroll .social{
     margin-top:15px;
+    color: #FFF;
+
+}
+
+.scroll .social:hover{
+
+    color: yellow;
 
 }
 
@@ -179,10 +217,26 @@ h1 {
     font-size: 21px;
 }
 
-#bat-ciné .bat-item{
+.bat-item{
     text-align: center;
-    
+    font-family: 'Rajdhani';
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
+
+.bat-item h3{
+    padding-top: 25px;
+}
+
+
+
+
+.bat-item:hover{
+    transform: scale(110%);
+}
+
+
 
 .bat-character{
     display: flex;
@@ -341,7 +395,7 @@ padding: 10px 0;
 opacity: 0;
 }
 
-
+/*Button*/
 
 .btn-group label{
     margin-right: 25px;
@@ -383,6 +437,8 @@ input[type='submit']{
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.568), rgba(224, 35, 35, 0.527));
 }
 
+/*quotes*/
+
 #quotes{
     margin: 90pxs;
 }
@@ -419,8 +475,12 @@ footer{
 
 footer .text-footer{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
  
+}
+
+.foot-img{
+    padding-top: 15px;
 }
 
 .social-media{
@@ -429,6 +489,20 @@ footer .text-footer{
 
 }
 
+.X{
+    padding: 15px;
+    background: none;
+
+}
+
+.social{
+    padding-bottom: 15px;
+}
+
 footer .social-item{
     padding: 15px;
+
 }
+
+
+
