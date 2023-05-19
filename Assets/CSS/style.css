@@ -45,7 +45,7 @@ h1{
 button{
     font-family: 'rajdhani';
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 .container {
@@ -58,8 +58,8 @@ body {
     background-color: black;
     color: white;
     font-family: 'Space Grotesk';
-    font-weight: 300;
     opacity: 0.8;
+    font-weight: 100;
 }
 
 /*  Design de la navigation */
@@ -130,9 +130,10 @@ nav ul a :hover {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    width: 60%;
-    margin: 0 auto;
-    padding-top:150px ;
+    width: 100%;
+    margin-left: 70px;
+    padding-top:300px ;
+
 }
 
 
@@ -152,32 +153,41 @@ nav ul a :hover {
 
 .btn{
     background: linear-gradient(100deg, var(--gradient-white), var(--gradient-white), var(--gradient-red)); ;
-    width: 50%;
-    display: block;
-    justify-content: center;
+    width: 25%;
     border: none;
     cursor: pointer;
     text-decoration: none;
+    font-weight: 100;
     color: var(--white-color);
     font-size: 22px;
-    padding: 15px 20px;
+    padding: 15px 10px;
+    letter-spacing: 2px;
 }
 
+.bouttons{
+    display: flex;
+    justify-content: center;
+    
+}
 
 /*Content*/
 
 .content p{
     font-family: 'Space Grotesk';
+    font-size: 20px;
+    text-align: center;
+
+
 }
 
 .scroll{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: fixed;
-    right: 80px;
+    align-items: self-end;
+    justify-items: flex-end;
+    position: absolute;
+    right: 10px;
     top: 230px;
-
 
 }
 
@@ -193,6 +203,8 @@ h1 {
     color: #FFF;
 
 }
+
+
 
 .scroll .social:hover{
 
