@@ -11,6 +11,9 @@
     </style>
 </head>
 <body>
+    <div class="upbar"></div>
+    <div class="leftbar"></div>
+    <div class="rightbar"></div>
     <header>
         <nav class="container">
             <a  href="index.html">
@@ -33,6 +36,7 @@
                 
             </div>
             <!--first section-->
+
         <section id="hero">
             <div class="container">
                 <div class="content">
@@ -99,11 +103,11 @@
 
        <section id="bat-némésis">
          <div class="container">
-            <Span>
-                <img src="Assets/Illustrations/Bathome13.png" alt="">
-                <h2 class="titre">NÉMÉSIS</h2>
-                
+            
+            <Span >
+                <img class="bathome13" src="Assets/Illustrations/Bathome13.png" alt="">
             </Span>
+            <h2 class="titre">NÉMÉSIS</h2>
             <p class="description">Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart 
                 du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou 
                 psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se mesurer à 
@@ -232,39 +236,41 @@
 
                               <!--Formulaire-->
                               <section id="contact">
-                                <div class="form">
-                                    <h2>PRENOMS CONTACT  </h2>
-                                    <FORM action="">
-                                        <label class="title" for="email">ADRESSE EMAIL</label>
-                                        <input type="email" name="email" placeholder="email">
-                                        <label class="title" for="newletter">NEWSLETTER</label>
-                                        <label for=""> En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
-                                            Batman :</label>
-                                            <input type="checkbox">
-                                            <br>
-                                            <div>
-                                                <span class="news">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newslette</span>
-                                                <span class="icon">
-                                                    <img src="Assets/Logos/icon_flèche_2.png" alt="">
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <p class="newsletter">Souhaitez-vous recevoir des news
-                                                </p>
-                                            </div>
-                                            <div class="btn-group">
-                                                <input type="radio" id="Film">
-                                                <label for="film">Des Films</label>
-                                                <input type="radio" id="Film">
-                                                <label for="comics">Des Comics</label>
-                                                <input type="radio" id="Film">
-                                                <label for="tout">De tout</label>
-                                            </div>
-                                           
-                                            <p class="title">MESSAGE</p>
-                                            <textarea name="" id="" cols="30"  placeholder="Laissez un commentaire pour la communauté">Laissez un commentaire pour la communauté</textarea>
-                                            <input type="submit" value="CONFIRMER">
-                                    </FORM>
+                                <div class="container">
+                                    <div class="form">
+                                        <h2>PRENOMS CONTACT  </h2>
+                                        <FORM action="">
+                                            <label class="title" for="email">ADRESSE EMAIL</label>
+                                            <input type="email" name="email" placeholder="email">
+                                            <label class="title" for="newsletter">NEWSLETTER</label>
+                                            <label for=""> En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
+                                                Batman :</label>
+                                                <input type="checkbox">
+                                                <br>
+                                                <div>
+                                                    <span class="news">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newslette</span>
+                                                    <span class="icon">
+                                                        <img src="Assets/Logos/icon_flèche_2.png" alt="">
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <p class="newsletter">Souhaitez-vous recevoir des news
+                                                    </p>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <input type="radio" id="Film">
+                                                    <label for="film">Des Films</label>
+                                                    <input type="radio" id="Film">
+                                                    <label for="comics">Des Comics</label>
+                                                    <input type="radio" id="Film">
+                                                    <label for="tout">De tout</label>
+                                                </div>
+                                               
+                                                <p class="title">MESSAGE</p>
+                                                <textarea name="" id="" cols="30"  placeholder="Laissez un commentaire pour la communauté">Laissez un commentaire pour la communauté</textarea>
+                                                <input type="submit" value="CONFIRMER">
+                                        </FORM>
+                                    </div>
                                 </div>
                                 
                               </section>
@@ -314,6 +320,5 @@
                     </div>
                 </div>
                </footer>
-    
 </body>
 </html>
