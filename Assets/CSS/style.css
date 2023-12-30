@@ -7,6 +7,8 @@
     font-family: 'Space Grotesk'; ;
     src: url(../Fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
 }
+
+
 h1 {
     color: red;
     font-family: 'rajdhani'; 
@@ -53,7 +55,6 @@ button{
 
 .container {
     width: 80%;
-    height: 100%;
    margin: 0 auto;
 }
 
@@ -65,19 +66,23 @@ body {
     font-family: 'Space Grotesk';
     opacity: 0.8;
     font-weight: 100;
-    height: 100%;
 }
 
 .upbar{
     border-top: #bcbbbd 4px solid ;
  position: relative;
  opacity: .4;
-   top: 150px;
-   left:102px;
+   top: 132px;
+   margin-left:102px;
 
 }
 
+.leftbar{
+    border-left: #bcbbbd 3px solid ;
+ opacity: .4;
+   margin-left:102px;
 
+}
 
 /*  Design de la navigation */
 
@@ -571,4 +576,6 @@ footer .social-item{
     padding: 15px;
 
 }
+
+
 
